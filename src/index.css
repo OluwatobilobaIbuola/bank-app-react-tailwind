@@ -128,9 +128,20 @@
   filter: blur(123px);
 }
 
+.orange__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #e46f24 100%);
+  filter: blur(123px);
+}
+
 .pink__gradient {
   background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
   filter: blur(900px);
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: Saturate(180%) blur(20px);
+  z-index: 10;
 }
 
 .white__gradient {
