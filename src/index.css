@@ -12,6 +12,7 @@
     #11101d 91.61%
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --card-shadowWhite: 0px 20px 100px -10px rgba(74, 117, 131, 0.1);
 }
 
 * {
@@ -26,6 +27,19 @@
     #9dedf0 42.04%,
     #7de7eb 55.12%,
     #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-gradientWhite {
+  background: radial-gradient(
+    64.18% 64.18% at 0% 0%,
+    #5ce1e6 0%,
+    #7de7eb 20%,
+    #bef3f5 60%,
+    #9dedf0 85%,
     #33bbcf 100%
   );
   -webkit-background-clip: text;
@@ -63,6 +77,10 @@
   );
 }
 
+.bg-white-gradient {
+  background: linear-gradient(120deg, #ffffff 0%, #81a198 70%);
+}
+
 .bg-gray-gradient {
   background: linear-gradient(
     153.47deg,
@@ -73,6 +91,10 @@
 
 .bg-discount-gradient {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.bg-discount-gradientWhite {
+  background: linear-gradient(125.17deg, #ffffff 0%, #629499 100%);
 }
 
 .box-shadow {
@@ -111,6 +133,11 @@
   box-shadow: var(--card-shadow);
 }
 
+.feature-cardWhite:hover {
+  background: linear-gradient(125.17deg, #ffffff 0%, #629499 100%);
+  box-shadow: var(--card-shadowWhite);
+}
+
 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
 }
@@ -123,9 +150,18 @@
   background: var(--black-gradient);
 }
 
+.feedback-cardWhite:hover {
+  background: linear-gradient(125.17deg, #ffffff 0%, #629499 100%);
+}
+
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(123px);
+}
+
+.blue__gradientTwo {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(90px);
 }
 
 .orange__gradient {
@@ -139,7 +175,7 @@
 }
 
 .filter {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: Saturate(180%) blur(20px);
   z-index: 10;
 }
