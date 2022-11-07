@@ -5,16 +5,17 @@ import Button from "./Button";
 
 const CTA = () => {
   const { mode } = useContext(EventValues);
+
   return (
     <section
-      className={`${styles.flexCenter} ${styles.marginY} ${
+      className={` ${styles.flexCenter} ${styles.marginY} ${
         styles.padding
       } sm:flex-row flex-col ${
         mode === "true" ? "bg-black-gradient-2" : "bg-white-gradient"
-      } rounded-[20px] box-shadow transition ease-in-out duration-400`}
+      } rounded-[20px] transition ease-in-out duration-500 box-shadow`}
     >
       <div className="flex-1 flex flex-col">
-        <h2 className={styles.heading2}>Let’s try our service now!</h2>
+        <h2 className={styles.heading2}>Let's try our service now!</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Everything you need to accept card payments and grow your business
           anywhere on the planet.

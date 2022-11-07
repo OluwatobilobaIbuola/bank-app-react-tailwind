@@ -24,23 +24,23 @@ const App = () => {
   }, []);
   return (
     <div className={mode === "true" ? "dark" : ""}>
-      <div className="dark:bg-primary w-full overflow-hidden relative transition ease-in-out duration-400">
+      <div className="dark:bg-primary w-full overflow-hidden relative transition ease-in-out duration-500">
         <div
-          className={`fixed right-0 left-0 top-0 filter transition ease-in-out duration-400 h-[110px] ${styles.paddingX} ${styles.flexCenter}`}
+          className={`fixed right-0 left-0 top-0 filter transition ease-in-out duration-500 h-[110px] ${styles.paddingX} ${styles.flexCenter}`}
         >
           <div className={`${styles.boxWidth}`}>
             <Navbar />
           </div>
         </div>
         <div
-          className={`mt-[110px] transition ease-in-out duration-400 dark:bg-primary ${styles.flexStart}`}
+          className={`mt-[110px] transition ease-in-out duration-500 dark:bg-primary ${styles.flexStart}`}
         >
           <div className={`${styles.boxWidth}`}>
             <Hero />
           </div>
         </div>
         <div
-          className={`dark:bg-primary transition ease-in-out duration-400 ${styles.paddingX} ${styles.flexStart}`}
+          className={`dark:bg-primary transition ease-in-out duration-500 ${styles.paddingX} ${styles.flexStart}`}
         >
           <div className={`${styles.boxWidth}`}>
             <Stats /> <Business /> <Billing /> <CardDeal /> <Testimonials />

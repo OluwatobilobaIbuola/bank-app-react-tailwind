@@ -10,12 +10,12 @@ const GetStarted = () => {
       className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}
     >
       <div
-        className={`${styles.flexCenter} flex-col transition ease-in-out duration-400 dark:bg-primary w-[100%] h-[100%] rounded-full`}
+        className={`${styles.flexCenter} flex-col transition ease-in-out duration-500 dark:bg-primary w-[100%] h-[100%] rounded-full`}
       >
         <div className={`${styles.flexStart} flex-row`}>
           <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
             <span
-              className={`transition ease-in-out duration-400 ${
+              className={`transition ease-in-out duration-500 ${
                 mode === "true" ? "text-gradient" : "text-white"
               }`}
             >
@@ -31,7 +31,7 @@ const GetStarted = () => {
 
         <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
           <span
-            className={`transition ease-in-out duration-400 ${
+            className={`transition ease-in-out duration-500 ${
               mode === "true" ? "text-gradient" : "text-white"
             }`}
           >

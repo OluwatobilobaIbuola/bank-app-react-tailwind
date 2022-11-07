@@ -15,7 +15,7 @@ const Hero = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div
-          className={`flex transition ease-in-out duration-400 flex-row items-center py-[6px] px-4 ${
+          className={`flex transition ease-in-out duration-500 flex-row items-center py-[6px] px-4 ${
             mode === "true"
               ? "bg-discount-gradient"
               : "bg-discount-gradientWhite"
@@ -23,8 +23,8 @@ const Hero = () => {
         >
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="transition ease-in-out duration-400 dark:text-white">20%</span> Discount For{" "}
-            <span className="transition ease-in-out duration-400 dark:text-white">1 Month</span> Account
+            <span className="transition ease-in-out duration-500 dark:text-white">20%</span> Discount For{" "}
+            <span className="transition ease-in-out duration-500 dark:text-white">1 Month</span> Account
           </p>
         </div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] dark:text-white ss:leading-[100.8px] leading-[75px]">
             The Next <br className="sm:block hidden" />{" "}
             <span
-              className={` transition ease-in-out duration-400 ${
+              className={` transition ease-in-out duration-500 ${
                 mode === "true" ? "text-gradient" : "text-gradientWhite"
               }`}
             >
