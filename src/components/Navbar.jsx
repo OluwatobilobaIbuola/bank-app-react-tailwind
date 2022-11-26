@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import { EventValues } from "../context/context";
 import ThemeMode from "../ThemeMode/theme.mode";
 
 const Navbar = () => {
